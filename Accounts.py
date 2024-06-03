@@ -67,7 +67,7 @@ class Account:
             return "Wrong PIN"
     def transaction_history(self, pin):
         if pin == self.__pin:
-            return "\n".join(self.__transaction_history)
+            return self.__transaction_history
         else:
             return "Wrong PIN"
     def set_minimum_balance(self, min_balance, pin):
